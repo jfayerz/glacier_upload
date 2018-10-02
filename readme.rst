@@ -11,13 +11,13 @@ for splitting the file and automating the upload etc. they don't really offer
 anything, or didn't at the time.
 
 This bash script will:
-- get the treehash (using ruby)
-- make various directories and log files for storing information
-- split the file (you can specify how large the pieces will be) in the script
-- initiate the upload
-- upload the files
-- finalize/close the aws job for the upload
-- record the information given back to it by aws
+  - get the treehash (using ruby)
+  - make various directories and log files for storing information
+  - split the file (you can specify how large the pieces will be) in the script
+  - initiate the upload
+  - upload the files
+  - finalize/close the aws job for the upload
+  - record the information given back to it by aws
 
 It does work, with smaller files.  I tried it on my 60GB file once on an old
 Mac Mini with 4GB of RAM, and it appeared to freeze things up.  This is
